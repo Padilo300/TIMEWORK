@@ -12,8 +12,12 @@
 @import 'section/section_6.scss';
 @import 'section/section_footer.scss';
 @import 'modal/modal_form.scss';
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
-
+//@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+@font-face {
+    font-family: 'Roboto Condensed', sans-serif;
+    src: url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+    font-display: swap;
+  }
 ul{
     margin: 0;
     list-style: none;
@@ -23,7 +27,6 @@ img{
     max-width: 100%;
 }
 *{
-    font-display: auto;
     font-family: 'Roboto Condensed', sans-serif;
 }
 a{

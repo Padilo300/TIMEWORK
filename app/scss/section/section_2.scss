@@ -1,5 +1,8 @@
 section.vacancies{
     margin-top: 150px;
+    @media screen  and (max-width:1199px){
+        margin-top: 50px;
+    }
     p.h3{
         font-size: 1.3em;
         width: 80%;

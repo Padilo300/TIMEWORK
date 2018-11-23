@@ -34,6 +34,7 @@ return gulp.src([                           // Берем все необход�
 	'app/js/main.js'		,
 	'app/js/slick.min.js'					,
 	'app/js/jquery.lazyload.js',
+	'app/js/maskedinput.min.js',
 		])
 		.pipe(concat('all.min.js'))   // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify())                     // Сжимаем JS файл
@@ -68,8 +69,8 @@ gulp.task('css-libs', ['sass'], function() {
 		.pipe(gulp.dest('app/css'));        // Выгружаем в папку app/css
 });
 
-gulp.task('watch', ['browser-sync', 'concat'], function() {
-	gulp.watch('app/scss/**/*.scss', ['sass', 'concat']);       // Наблюдение за sass файлами в папке sass
+gulp.task('watch', ['browser-sync'], function() {
+	gulp.watch('app/scss/**/*.scss', ['sass']);       // Наблюдение за sass файлами в папке sass
 	gulp.watch('app/*.html', browserSync.reload);       		// Наблюдение за HTML файлами в корне проекта
 	gulp.watch('app/js/**/*.js', browserSync.reload);   		// Наблюдение за JS файлами в папке js
 });
