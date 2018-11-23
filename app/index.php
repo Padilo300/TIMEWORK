@@ -1,24 +1,4 @@
-<?php 
- function sanitize_output($buffer) {
-    $search = array(
-        '/\>[^\S ]+/s',     // strip whitespaces after tags, except space
-        '/[^\S ]+\</s',     // strip whitespaces before tags, except space
-        '/(\s)+/s',         // shorten multiple whitespace sequences
-        '/<!--(.|\s)*?-->/' // Remove HTML comments
-    );
-    $replace = array(
-        '>',
-        '<',
-        '\\1',
-        ''
-    );
-    $buffer = preg_replace($search, $replace, $buffer);
-    return $buffer;
-}
 
-ob_start("sanitize_output");
-   
-?>
 <!DOCTYPE html>
 <html lang="ua">
 <head>
@@ -781,13 +761,13 @@ section.vacancies .vacancies_cart {
                                </a>
                           </li>
                           <li class="social_ico">
-                            <a href="https://www.facebook.com/timework.in.ua/">
+                            <a href="https://www.facebook.com/timework.in.ua/" target="_blank">
                                 <i class="fa fa-facebook-official" aria-hidden="true"></i>
                             </a>
-                            <a href="https://www.instagram.com/timework_agencjia_pracy/">
+                            <a href="https://www.instagram.com/timework_agencjia_pracy/" target="_blank">
                                 <img data-original="img/instagram-logo (1).svg" >
                             </a>
-                            <a href="https://t.me/timeworkeu">
+                            <a href="https://t.me/timeworkeu" target="_blank">
                                 <i class="fa fa-telegram" aria-hidden="true"></i>
                             </a>
                               
@@ -833,7 +813,7 @@ section.vacancies .vacancies_cart {
                                     Просто заповніть форму
                                 </p>
                                 <input type="text" name="name" autocomplete="given-name" placeholder="Ваше імя*" required>
-                                <input type="number" name="phone" id="phone" required autocomplete="tel" placeholder="Номер телефону*" required>
+                                <input type="text" name="phone" id="phone" required autocomplete="tel" placeholder="Номер телефону*" required>
                                 <input type="email" name="email" autocomplete="email" placeholder="E-mail" >
                                 <button type="submit">
                                     Відправити анкету
@@ -1754,53 +1734,57 @@ section.vacancies .vacancies_cart {
                         Наші партнери
                     </b>
                 </p>
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/1.webp" alt="партнеры">
-            </div>
 
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/2.webp" alt="партнеры">
+            <div id="responsive">
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img data-original="/img/brands/1.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/2.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/3.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/4.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/5.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/6.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/7.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/8.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/9.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="../img/brands/10.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img src="/img/brands/11.webp" alt="партнеры">
+                </div>
+    
+                <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
+                    <img  src="/img/brands/12.webp" alt="партнеры">
+                </div>
             </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/3.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/4.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/5.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/6.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/7.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/8.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/9.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="../img/brands/10.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/11.webp" alt="партнеры">
-            </div>
-
-            <div class="col-xs-12 col-md-4 col-sm-6 col-lg-2">
-                <img data-original="/img/brands/12.webp" alt="партнеры">
-            </div>
+            
 
 
         </div>
@@ -1818,15 +1802,14 @@ section.vacancies .vacancies_cart {
     <footer class="section_footer container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-md-5 mail">
+                <div class="col-xs-12 col-md-12 col-lg-5 mail">
                     <a href="/" class="logoFooter">
-                        <img data-original="/img/logo.webp" alt="logo" style="width: 85%;">
+                        <img data-original="/img/logo.webp" alt="logo" >
                     </a>
+                    <br>
+                    <p style="color: #fff;font-size:1.5rem ;">Бережіть свій час і нерви, і заробляйте більше разом з нами!</p>
                 </div>
-                <div class="col-xs-12 col-md-3 col-lg-3">
-                 
-                </div>
-                <div class="col-xs-12 col-md-4 col-lg-3">
+                <div class="col-xs-12 col-md-6 col-lg-3">
                 <ul class="tel" >
                      <li style="color:#fff"><span><i class="fa fa-map-marker" aria-hidden="true" style="    color: #deb90c;"></i></span>
                                 м.Луцьк, вул. Шевченка 22
@@ -1855,14 +1838,15 @@ section.vacancies .vacancies_cart {
                           
                      
                 </ul>
+                </div><!-- end col -->
+                <div class="col-xs-12 col-md-6 col-lg-4">
+                   <p style="color: #fff;font-size:1.6rem;">Працюючи разом з нами ви отримаєте кваліфікований супровід від початку оформлення документів для отримання візи, трансферу до місця роботи, поселення, до  влаштування на роботу та отримання заробітної плати!</p>
                 </div>
             </div>
           <div class="row">
             <div class="col-md-12">
-               <p style="color: #fff;font-size:15px;">Працюючи разом з нами ви отримаєте кваліфікований супровід від початку оформлення документів для отримання візи, трансферу до місця роботи, поселення, до  влаштування на роботу та отримання заробітної плати!</p>
             </div>
             <div class="col-md-12">
-               <p style="color: #fff;font-size:15px;">Бережіть свій час і нерви, і заробляйте більше разом з нами!</p>
             </div>
           </div>
         </div>
@@ -1901,7 +1885,7 @@ section.vacancies .vacancies_cart {
           </button>
         </div>
         <div class="modal-body">
-          <p class="h2">Дякую!
+          <p class="h2">Дякуємо!
             <br>
           Ми скоро зв'яжемося з вами</p>
         </div>
@@ -1914,9 +1898,9 @@ section.vacancies .vacancies_cart {
   <link rel="stylesheet" href="/css/NativStyle.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/placeholder.css">
-  <link rel="stylesheet" href="/css/slick.css"> -->
-  <link rel="stylesheet" href="/css/all_Libs.css?ver=2">
-  <link rel="stylesheet" href="/css/fix.css?ver=3">
+  <link rel="stylesheet" href="/css/slick.css"> -->  
+  <link rel="stylesheet" href="/css/all_Libs.css?ver=23_11">
+  <link rel="stylesheet" href="/css/fix.css?ver=23_11">
 
     <!-- <script data-original="/js/jquery-3.3.1.min.js"></script>
     <script data-original="/js/bootstrap.min.js"></script>
@@ -1926,8 +1910,10 @@ section.vacancies .vacancies_cart {
     <script src="/js/all.min.js"></script>
     <script >
             $(document).ready(function(){
+                
                 new WOW().init();
-
+                
+                $("#phone").mask("+3(999) 999-99999");
                 $(function() {
                     $("img[data-original]").lazyload();
                 });
@@ -1974,7 +1960,43 @@ section.vacancies .vacancies_cart {
                     $("[data-transform='container-fluid']").removeClass('container').addClass('container-fluid');
                 }
           
-
+                $('#responsive').slick({
+                    dots: false,
+                    infinite: false,
+                    speed: 300,
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                    prevArrow: '<div class="prev"><</div>',
+                    nextArrow: '<div class="next">></div>',
+                    responsive: [
+                        {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots: false
+                        }
+                        },
+                        {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 2
+                        }
+                        },
+                        {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                        }
+                        // You can unslick at a given breakpoint now by adding:
+                        // settings: "unslick"
+                        // instead of a settings object
+                    ]
+                    });
         })
     </script>
     
