@@ -1,0 +1,51 @@
+footer.section_footer{
+    min-height: 176px;
+    background-color: #222b38;
+    padding-top: 30px;
+    div.col-xs-12{
+        position: relative;
+        min-height: 180px;
+    }
+    .mail{
+        a{
+            color: #959595;
+            @media screen and (max-width: 991px) {
+                display: block;
+                text-align: center;
+            }
+        }
+        
+    }
+    .social{
+        div{
+            display: flex;
+            justify-content: space-evenly;
+ 
+        }
+    }
+    .tel{
+        float: right;
+        text-align: right;
+        font-size: 1.2em;
+
+
+
+        @media screen and (max-width: 991px) {
+            float: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        
+
+
+        li{
+            span{
+                color: #959595;
+            }
+            &:last-child{
+                color: #959595;
+            }
+        }
+    }
+}

@@ -1,0 +1,59 @@
+section.advantages{
+    figure{
+        width: 231px;
+        height: 284px;
+        background-color: #222b38;
+        position: absolute;
+        top: -207px;
+        padding: 34px 20px 10px 20px;
+        transition: all 0.4s;
+        &:hover{
+            box-shadow: 0 0 20px #deb90c;
+            border-radius: 8px;
+            transform: scale(1.1) translate(0, 20px);
+        }
+        @media screen and (max-width: 991px){
+            position: static;
+            margin: 30px auto;
+        }
+        div{
+            width: 84px;
+            height: 84px;
+            border-radius: 100px;
+            margin: 0 auto ;
+            border: 3px solid #deb90c;
+            position: relative;
+            
+            span{
+                display: block;
+                margin: 0 auto;
+                position: relative;
+                top: 19px;
+            }
+        }
+        figcaption{
+            text-align: center;
+            font-weight: 500;
+            font-size: 1.4em;
+            color: #fff;
+            margin: 16px 0 35px 0;
+            position: relative;
+            text-transform: uppercase;
+            &:after{
+                content: "";
+                display: block;
+                width: 34px;
+                height: 4px;
+                background: #deb90c;
+                position: absolute;
+                bottom: -20px;
+                left: 41%;
+            }
+        }
+        p{
+            color: #fff;
+            font-size: 1em;
+            text-align: center;
+        }
+    }
+}

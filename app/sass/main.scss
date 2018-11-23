@@ -1,0 +1,41 @@
+
+@import 'variable.scss';
+@import 'button/button.scss';
+@import 'mainSection/mainSection.scss';
+@import 'mainSection/header.scss';
+@import 'section_1.scss';
+@import 'section/section_2.scss';
+@import 'section/section_3.scss';
+@import 'section/section_4.scss';
+@import 'section/section_5.scss';
+@import 'section/section_6.scss';
+@import 'section/section_footer.scss';
+@import 'modal/modal_form.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+img{
+    max-width: 100%;
+}
+*{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+    &:focus{
+        color: #fff;
+        text-decoration: none;
+    }
+    &:active{
+        color: #fff;
+        text-decoration: none;
+    }
+    &:link{
+        color: #fff;
+        text-decoration: none;
+    }
+}

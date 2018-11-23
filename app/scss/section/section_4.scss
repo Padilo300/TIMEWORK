@@ -1,0 +1,89 @@
+section.section_4{
+    min-height: 600px;
+    #slikGo{
+        width: 70%;
+        margin: 0 auto;
+       .next,
+       .prev{
+        width: 30px;
+        height: 47px;
+        border-radius: 8px;
+        background-color: #ffd200;
+        font-size: 2em;
+        text-align: center;
+        position: absolute;
+       
+        
+       }
+       .next{
+        right: 20%;
+        bottom: 13%;
+       }
+       .prev{
+        left: 20%;
+        bottom: 13%;
+       }
+    }
+   
+    figure{
+        width: 50%;
+        margin: 150px auto 0 auto;
+        text-align: center;
+        figcaption{
+            font-size: 1.3em;
+            &:first-child{
+                position: relative;
+                width: 80%;
+                margin: 0 auto;
+                &::before{
+                    content: " “ ";
+                    display: block;
+                    position: absolute;
+                    font-size: 7em;
+                    color: #f7d103;
+                    left: 1%;
+                    top: -98%;
+                    @media screen and (max-width: 1199px){
+                        top: -60%;
+                     }
+                     @media screen and (max-width: 500px){
+                        display: none !important;
+                     }
+                    
+                }
+                &:after{
+                    content: " “ ";
+                    display: block;
+                    position: absolute;
+                    font-size: 7em;
+                    color: #f7d103;
+                    right: -1%;
+                    bottom: -90%;
+                    transform: rotate(181deg);
+                    @media screen and (max-width: 1199px){
+                        bottom: -60%;
+                     }
+                     @media screen and (max-width: 500px){
+                        display: none !important;
+                     }
+                }
+            }
+        }
+        img{
+            margin: 47px auto 0 auto;
+            border: 3px solid #ffd200;
+            border-radius: 100%;
+            & + figcaption{
+                color: #ffd200;
+                font-size: 2em;
+                letter-spacing: 2px;
+            }
+        }
+    }
+}
+
+section.section_4 #slikGo .prev {
+    left: 20%;
+    bottom: 13%;
+    z-index: 5;
+}

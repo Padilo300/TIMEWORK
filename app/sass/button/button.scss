@@ -1,0 +1,27 @@
+.mainButton{
+    height: 42px;
+    border-radius: 8px;
+    background-color: #deb90d;
+    border: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    &:hover{
+        box-shadow: 0 0 25px #deb90c;
+        color: #fff;
+    }
+    .mainButton_num{
+        border-radius: 8px;
+        background-color: #f24841;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 3px 6px 3px 5px;
+        text-align: center;
+    }
+}
+.mainButtonXL{
+    width: 88%;
+    height: 61px;
+    @media screen and (max-width: 767px){
+        height: max-content;
+    }
+}

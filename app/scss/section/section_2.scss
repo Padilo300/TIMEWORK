@@ -1,0 +1,201 @@
+section.vacancies{
+    margin-top: 150px;
+    p.h3{
+        font-size: 1.3em;
+        width: 80%;
+        margin: 0 auto 39px auto;
+        text-align: center;
+        mark{
+            color: #deb90c;
+            background: transparent;
+            font-size: 2.1em;
+            @media screen and (max-width: 500px){
+                font-size: 1.7em;
+             }
+        }
+    }
+    div.hotTex{
+        overflow: hidden;
+        span{
+            font-size: 1.3em;
+            position: relative;
+            &:before{
+                content: "";
+                display: block;
+                width: 9px;
+                height: 9px;
+                position: absolute;
+                background: #deb90c;
+                border-radius: 100%;
+                right: -22px;
+                top: 8px;
+            }
+            &:after{
+                content: "";
+                width: 1000%;
+                height: 1px;
+                background: #222b38;
+                position: absolute;
+                top: 10px;
+                left: 122%;
+                opacity: 0.26;
+            }
+        }
+    }
+    .vacancies_cart{
+        padding: 50px;
+        .vacancies_cart_cart{
+            section{
+                .img_work{
+                    border-radius: 10px;
+                    background-size: 100%;
+                    background-position: 60% 20%;
+                    margin: 0 0 10px 0;
+                    transition: all 0.7s;
+                    @media screen and (max-width: 1199px){
+                        height: 200px;
+                    }
+                    @media screen and (max-width: 1199px){
+                        height: 300px;
+                        
+                    }
+                    @media screen and (max-width: 600px){
+                        height: 200px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                    }
+                    @media screen and (max-width: 375px){
+                        height: 150px;
+                        
+                    }                    &:hover{
+                        background-size: 130%;
+                    }
+                }
+               
+            }
+            &:nth-child(1) section .img_work{
+                background-image: url("../img/1/workers/1.webp");
+            }
+            &:nth-child(2) section .img_work{
+                background-image: url("../img/1/workers/2.webp");
+            }
+            &:nth-child(3) section .img_work{
+                background-image: url("../img/1/workers/3.webp");
+            }
+            &:nth-child(4) section .img_work{
+                background-image: url("../img/1/workers/4.webp");
+            }
+            &:nth-child(5) section .img_work{
+                background-image: url("../img/1/workers/5.webp");
+            }
+            &:nth-child(6) section .img_work{
+                background-image: url("../img/1/workers/6.webp");
+            }
+            &:nth-child(7) section .img_work{
+                background-image: url("../img/1/workers/7.webp");
+            }
+            &:nth-child(8) section .img_work{
+                background-image: url("../img/1/workers/8.webp");
+            }
+        }
+        section{
+            min-height: 350px;
+            box-shadow: 0 0 7px 1px rgba(47, 47, 47, 0.18);
+            border-radius: 8px;
+            background-color: #f3f3f3;
+            padding: 14px;
+            transition: all 0.4s;
+            margin: 0 0 30px 0;
+            @media screen and (max-width: 1199px) {
+                min-height: max-content;
+                min-height: max-content;
+            }
+            &:hover{
+                box-shadow: 0 0 30px #333;
+                transform: scale(1.1) translate(0, -10px);
+                .img_work{
+                    filter: brightness(1.1);
+                }
+            }
+            .img_work{
+                width: 100%;
+                height: 90px;
+            }
+          
+            h3{
+                font-size: 1.2em;
+                color: #000;
+                text-align: left;
+                font-weight: 800;
+                margin: 0 0 35px 0;
+                position: relative;
+                min-height: 75px;
+                &:after{
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 83px;
+                    height: 3px;
+                    background-color: #deb90d;
+                    bottom: -13px;
+                }
+            }
+            .mainButton{
+                font-size: 1.3em;
+                width: 100%;
+            }
+            ul{
+                margin: 0 0 17px 0;
+                min-height: 250px;
+                li{
+                    margin: 0 0 10px 0;
+                    table{
+                        tr{
+                            td{
+                                &:first-child{
+                                    vertical-align: top;
+                                }
+                            }
+                        }
+                    }
+                    span{
+                        margin: 0 5px 0 0;
+                        width: 24px;
+                        &.dollar {
+                            background-position: 4px -242px;
+                        }
+                        &.marker {
+                            background-position: 2px -196px;
+                        }
+                        &.clock {
+                            background-position: -1px -153px;
+                        }
+                        &.home {
+                            background-position: 1px -175px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contentBottom{
+        p.textBottom{
+            width: 60%;
+            margin: 40px auto;
+            @media screen and (max-width: 991px){
+                width: 100%;
+            }
+            
+        }
+        button{
+            width: 50%;
+            height: 61px;
+            margin: 0 auto;
+            display: block;
+
+            @media screen and (max-width: 991px){
+                width: 90%;
+            }
+        }
+    }
+}

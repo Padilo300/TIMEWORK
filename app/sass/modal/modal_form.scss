@@ -1,0 +1,82 @@
+.modal_form{
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: 10px;
+    .close{
+        padding: 10px;
+        font-size: 2em;
+        position: absolute;
+        right: 0;
+        top: -4px;
+    }
+    form{
+        width: 100%;
+        height: 353px;
+        border-radius: 8px;
+        background-color: #deb90d;
+        padding: 15px;
+
+        
+        @media screen and (max-width: 991px){
+            float: none;
+            width: 100%;
+            height: max-content;
+        }
+
+        
+        input{
+            width: 89%;
+            height: 47px;
+            border-radius: 5px;
+            border: none;
+            text-align: left;
+            margin: 0  auto 10px auto;
+            display: block;
+            font-size: 18px;
+            line-height: 47px; 
+            padding: 0 0 0 17px;
+            text-align: center;
+            &:last-child{
+                margin: 0 0 17px 0;
+            }
+        }
+        h1{
+            color: #ffffff;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+        p{
+            font-size: 18px;
+        }
+        button{
+            width: 100%;
+            height: 58px;
+            background-color: $dop-theme-color;
+            border: none;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 24px;
+            transition: all 0.4s;
+            &:hover{
+                box-shadow: 0 0 25px #ffffffc2;
+                text-shadow: 0 0 3px #fff;
+            }
+        }
+    }
+}
+#modalFuncYou{
+    .modal-dialog{
+        top: 20%;
+        .modal-content{
+            background-color: #deb90d;
+            p{
+                text-align: center;
+                background-color: #deb90d;
+                color: #fff;
+            }
+        }
+    }
+    
+}
